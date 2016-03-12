@@ -7,7 +7,7 @@
 
 - 在系统规划阶段主要完成如下工作：
 
-<<<<<<< HEAD
+
 1.1 [系统需求分析和目标设定](./requirement analysis.md)
 
 1.2 [系统可行性分析](./feasibility analysis of the system.md)
@@ -40,6 +40,6 @@
 ## 4.系统实现
 
 4.1 [数据库的建立与连接](./database realization.md)
-=======
+
 1.1 [系统需求分析和目标设定;](./requirement analysis.md)
->>>>>>> origin/master
+
