@@ -12,7 +12,17 @@
 		mysql-connector-java-5.1.38-bin.jar
 		standard.jar
 	1.2 创建包名
-		
+		com.furniture.domain
+		com.furniture.formbean
+		com.furniture.dao.impl
+		com.furniture.service.impl
+		com.furniture.web.controller
+		com.furniture.web.filter
+		com.furniture.web.UI
+		com.furniture.test
+		com.furniture.utils
+		com.furniture.exception
+		com.furniture.factory	
 
 
 
