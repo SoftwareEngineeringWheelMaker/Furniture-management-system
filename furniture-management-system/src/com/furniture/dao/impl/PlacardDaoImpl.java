@@ -42,7 +42,7 @@ public class PlacardDaoImpl {
 		}
 	}
 
-	public List<Placard> getOperator(Placard placard) {
+	public List<Placard> getPlacard(Placard placard) {
 		try {
 			QueryRunner runner = new QueryRunner(JdbcUtils.getDataSource());
 			String sql = "select * from placard where pid=?";
