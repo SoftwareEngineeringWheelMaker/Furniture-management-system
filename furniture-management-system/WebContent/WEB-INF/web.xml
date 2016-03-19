@@ -9,4 +9,14 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+  <description>公告类</description>
+  <display-name>PlacardServlet</display-name>
+  <servlet-name>PlacardServlet</servlet-name>
+  <servlet-class>com.furniture.web.controller.PlacardServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>PlacardServlet</servlet-name>
+  <url-pattern>/servlet/PlacardServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
