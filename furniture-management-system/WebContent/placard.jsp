@@ -10,8 +10,7 @@
 </head>
 <body>
 <%request.setCharacterEncoding("utf-8");%>
-<form name="add" action="PlacardServlet" method="post">
-<input type="hidden" name="action" value="1"/>
+<form name="add" action="PlacardServlet?action=add" method="post">
 <table align=center>
 <tr>
 <td>БъЬтЃК<input type="text" name="title" size=40/>
