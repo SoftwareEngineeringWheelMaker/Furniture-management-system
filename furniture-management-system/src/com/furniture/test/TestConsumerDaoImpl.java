@@ -16,7 +16,7 @@ public class TestConsumerDaoImpl {
 	}
 	@Test
 	public void TestAddConsumer(){
-		Consumer consumer = new Consumer("123123", "asdf", "sadffasd", 12344, 555);
+		Consumer consumer = new Consumer(123123, "asdf", "sadffasd", "12344", 555);
 		ConsumerDaoImpl daoImpl = new ConsumerDaoImpl();
 		daoImpl.AddConsumer(consumer);
 	}
@@ -29,7 +29,7 @@ public class TestConsumerDaoImpl {
 	}
 	@Test
 	public void TestUpdateConsumer(){
-		Consumer consumer = new Consumer("123123", "asdf", "sadffasd", 12344, 555);
+		Consumer consumer = new Consumer(123123, "asdf", "sadffasd", "12344", 555);
 		consumer.setCid(9);
 		ConsumerDaoImpl daoImpl = new ConsumerDaoImpl();
 		daoImpl.UpdateConsumer(consumer);

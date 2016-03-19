@@ -1,6 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
   <display-name>furniture-management-system</display-name>
+
+  <!-- =============== com.furniture.web.UI start ======================= -->
+  <!-- ===============        提供界面的servlet              =============== -->
+    <!-- 
+    @Version:1.0
+  	@Author Raindrops
+  	@Date 2016/3/19
+   -->
+  <!-- RegisterUIServlet -->
+  <servlet>
+  	<servlet-name>RegisterUIServlet</servlet-name>
+  	<servlet-class>com.furniture.web.UI.RegisterUIServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>RegisterUIServlet</servlet-name>
+  	<url-pattern>/servlet/RegisterUIServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- LoginUIServlet -->
+  <servlet>
+  	<servlet-name>LoginUIServlet</servlet-name>
+  	<servlet-class>com.furniture.web.UI.LoginUIServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LoginUIServlet</servlet-name>
+  	<url-pattern>/servlet/LoginUIServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- AdminUIServlet -->
+  <servlet>
+  	<servlet-name>AdminUIServlet</servlet-name>
+  	<servlet-class>com.furniture.web.UI.AdminUIServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AdminUIServlet</servlet-name>
+  	<url-pattern>/servlet/AdminUIServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- HeadUIServlet -->
+  <servlet>
+  	<servlet-name>HeadUIServlet</servlet-name>
+  	<servlet-class>com.furniture.web.UI.HeadUIServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>HeadUIServlet</servlet-name>
+  	<url-pattern>/servlet/HeadUIServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- BodyUIServlet -->
+  <servlet>
+  	<servlet-name>BodyUIServlet</servlet-name>
+  	<servlet-class>com.furniture.web.UI.BodyUIServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>BodyUIServlet</servlet-name>
+  	<url-pattern>/servlet/BodyUIServlet</url-pattern>
+  </servlet-mapping>
+  <!-- =============== com.furniture.web.UI end    ======================= -->
+  
+  <!-- =============== com.furniture.web.controller start ============== -->
+  <!-- ===============        提供界面的servlet              =============== -->
+    <!-- 
+    @Version:1.0
+  	@Author Raindrops
+  	@Date 2016/3/19
+   -->
+  <!-- RegisterServlet -->
+  <servlet>
+  	<servlet-name>RegisterServlet</servlet-name>
+  	<servlet-class>com.furniture.web.controller.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>RegisterServlet</servlet-name>
+  	<url-pattern>/servlet/RegisterServlet</url-pattern>
+  </servlet-mapping>
+   <!-- LoginServlet -->
+  <servlet>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<servlet-class>com.furniture.web.controller.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/servlet/LoginServlet</url-pattern>
+  </servlet-mapping>
+     <!-- LogoutServlet -->
+  <servlet>
+  	<servlet-name>LogoutServlet</servlet-name>
+  	<servlet-class>com.furniture.web.controller.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LogoutServlet</servlet-name>
+  	<url-pattern>/servlet/LogoutServlet</url-pattern>
+  </servlet-mapping>
+  <!-- =============== com.furniture.web.controller end    =============== -->
+  
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.htm</welcome-file>
