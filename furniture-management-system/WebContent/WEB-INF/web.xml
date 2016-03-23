@@ -107,6 +107,16 @@
   	<servlet-name>LogoutServlet</servlet-name>
   	<url-pattern>/servlet/LogoutServlet</url-pattern>
   </servlet-mapping>
+  
+     <!-- FurServlet -->
+  <servlet>
+    <servlet-name>FurServlet</servlet-name>
+    <servlet-class>com.furniture.web.controller.FurServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FurServlet</servlet-name>
+    <url-pattern>/servlet/FurServlet</url-pattern>
+  </servlet-mapping>
   <!-- =============== com.furniture.web.controller end    =============== -->
   
   <welcome-file-list>
