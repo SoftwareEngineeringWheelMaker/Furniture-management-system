@@ -15,6 +15,8 @@
 <c:if test="${consumer!=null}">
 	欢迎您:${consumer.cname} || <a href="${pageContext.request.contextPath }/servlet/LogoutServlet">注销</a>
 </c:if>
-<a href="${pageContext.request.contextPath }/servlet/AdminUIServlet">后台管理系统</a>
+<a href="${pageContext.request.contextPath }/servlet/AdminUIServlet">后台管理系统</a><br>
+
+<a href="${pageContext.request.contextPath }/servlet/ListFurnitureServlet">查看所有家具</a><br>
 </body>
 </html>

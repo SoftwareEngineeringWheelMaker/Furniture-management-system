@@ -7,7 +7,7 @@ public class Page {
 	private int totalpage;//记录总页数
 	
 	private int totalrecord;
-	private int pagesize = 1;
+	private int pagesize=2;
 	
 	private int pagenum;//代表用户想看的页
 	private int startindex;//代表用户想看的页从数据库哪个地方开始取
@@ -15,7 +15,16 @@ public class Page {
 	private int startPage;//记住JSP页面显示的起始页码
 	private int endPage;//记住jsp页面显示的结束页码
 	
-	public Page(int totalrecord,int pagenum)
+	private int pagecount;//页面数量
+	
+	/**
+	 * 
+	 * @param totalrecord 数量
+	 * @param pagenum	代表用户想看的页
+	 * @param pagecount 页面数量
+	 * @param pagesize 每页显示多少数据
+	 */
+	public Page(int totalrecord,int pagenum,int pagecount)
 	{
 		this.totalrecord = totalrecord;
 		if(this.totalrecord%this.pagesize==0)
@@ -29,21 +38,21 @@ public class Page {
 		this.startindex = (this.pagenum-1)*this.pagesize;
 		
 		//根据用户想看的页pagenum,算出jsp的起始和结束页码
-		if(this.totalpage <= 10){
+		if(this.totalpage <= pagecount){
 			this.startPage=1;
-			this.endPage=10;
+			this.endPage=pagecount;
 		}else{
 			this.startPage=this.pagenum - 4;
 			this.endPage=this.pagenum + 5;
 			
 			if (this.startPage < 1) {
 				this.startPage=1;
-				this.endPage=10;
+				this.endPage=pagecount;
 			}
 			if(this.endPage > this.totalpage)
 			{
 				this.endPage=this.totalpage;
-				this.startPage = this.totalpage-9;
+				this.startPage = this.totalpage-pagecount+1;
 			}
 		}
 		
@@ -65,6 +74,24 @@ public class Page {
 	 */
 	public void setStartPage(int startPage) {
 		this.startPage = startPage;
+	}
+
+	
+
+	/**
+	 * @return the pagecount
+	 */
+	public int getPagecount() {
+		return pagecount;
+	}
+
+
+
+	/**
+	 * @param pagecount the pagecount to set
+	 */
+	public void setPagecount(int pagecount) {
+		this.pagecount = pagecount;
 	}
 
 

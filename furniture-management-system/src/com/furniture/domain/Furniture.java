@@ -28,6 +28,15 @@ public class Furniture {
 		this.fprice = fprice;
 		this.fpic = fpic;
 	}
+	public Furniture( String fname, String fsummary, int fnum, double fprice, String fpic) {
+		super();
+		this.fid = fid;
+		this.fname = fname;
+		this.fsummary = fsummary;
+		this.fnum = fnum;
+		this.fprice = fprice;
+		this.fpic = fpic;
+	}
 	public int getFid() {
 		return fid;
 	}

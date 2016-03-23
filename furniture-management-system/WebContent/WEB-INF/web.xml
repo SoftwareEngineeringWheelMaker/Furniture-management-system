@@ -117,6 +117,29 @@
     <servlet-name>FurServlet</servlet-name>
     <url-pattern>/servlet/FurServlet</url-pattern>
   </servlet-mapping>
+  
+  
+  <!-- ListFurnitureServlet -->
+  <servlet>
+  	<servlet-name>ListFurnitureServlet</servlet-name>
+  	<servlet-class>com.furniture.web.controller.ListFurnitureServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>ListFurnitureServlet</servlet-name>
+  	<url-pattern>/servlet/ListFurnitureServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- ListFurnitureServlet -->
+  <servlet>
+  	<servlet-name>BuyServlet</servlet-name>
+  	<servlet-class>com.furniture.web.controller.BuyServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>BuyServlet</servlet-name>
+  	<url-pattern>/servlet/BuyServlet</url-pattern>
+  </servlet-mapping>
   <!-- =============== com.furniture.web.controller end    =============== -->
   
   <welcome-file-list>
