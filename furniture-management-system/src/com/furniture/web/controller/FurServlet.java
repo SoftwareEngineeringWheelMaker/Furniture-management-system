@@ -42,10 +42,6 @@ public class FurServlet extends HttpServlet {
 			System.out.println(req.getParameter("fpic"));
 			if(req.getParameter("fpic").equals(""))
 				newFilename="empty";
-			else if(!req.getParameter("fpic").substring(req.getParameter("fpic").length()-2, req.getParameter("fpic").length()).equals("jpg")){
-				req.getRequestDispatcher("error.jsp").forward(req, resp);
-				return;
-			}
 			else
 				newFilename = sdf1.format(date)+".jpg";
 			System.out.println(newFilename);
@@ -127,7 +123,8 @@ public class FurServlet extends HttpServlet {
 			
 		case "detail":
 			FurnitureDaoImpl furDaoImpl6 = new FurnitureDaoImpl();
-			furList.clear();
+			if(furList!=null)
+				furList.clear();
 			furList = furDaoImpl6.getDetail(id);
 			if(furList.size()!=0){
 				req.setAttribute("furList",furList);
