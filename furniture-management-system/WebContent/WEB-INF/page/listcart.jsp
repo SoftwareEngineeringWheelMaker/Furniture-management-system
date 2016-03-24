@@ -15,11 +15,11 @@
 		}
 	}
 	
-	function update(bookid,oldquantity){
+	function update(furnitureid,oldquantity){
 		
 		var value = document.getElementById("quantity").value;
 		if(window.confirm("确定更改数量为"+value+"？")){
-		window.location.href="${pageContext.request.contextPath }/servlet/UpdateCartServlet?bookid="+bookid+"&quantity="+value;	
+		window.location.href="${pageContext.request.contextPath }/servlet/UpdateCartServlet?furnitureid="+furnitureid+"&quantity="+value;	
 		}else{
 			document.getElementById("quantity").value=oldquantity;
 		}
@@ -44,7 +44,7 @@
 			<td>${me.value.furniture.fprice}</td>
 			<td><input type="text" id="quantity" style="width: 30px;" onchange="update(${me.value.furniture.fid},${me.value.quantity})" value="${me.value.quantity}"/></td>
 			<td>${me.value.price}</td>
-			<td><a href="${pageContext.request.contextPath }/servlet/DeleteServlet?furnitureid=${me.value.furniture.fid}">删除</a></td>
+			<td><a href="${pageContext.request.contextPath }/servlet/DeleteCartServlet?furnitureid=${me.value.furniture.fid}">删除</a></td>
 		</tr>
 		</c:forEach>
 		<tr align="center">

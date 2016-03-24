@@ -14,7 +14,7 @@ public class Cart {
 		
 		if(item != null){
 			item.setQuantity(item.getQuantity()+1);
-			System.out.println(item.getFurniture().getFid());
+			//System.out.println(item.getFurniture().getFid());
 		}else{
 			CartItem cartItem = new CartItem();
 			cartItem.setFurniture(furniture);

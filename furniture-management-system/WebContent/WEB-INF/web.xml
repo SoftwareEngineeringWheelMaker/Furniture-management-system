@@ -140,6 +140,36 @@
   	<servlet-name>BuyServlet</servlet-name>
   	<url-pattern>/servlet/BuyServlet</url-pattern>
   </servlet-mapping>
+  
+  <!-- ClearCartServlet -->
+  <servlet>
+  	<servlet-name>ClearCartServlet</servlet-name>
+  	<servlet-class>com.furniture.web.controller.ClearCartServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ClearCartServlet</servlet-name>
+  	<url-pattern>/servlet/ClearCartServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- UpdateCartServlet -->
+  <servlet>
+  	<servlet-name>UpdateCartServlet</servlet-name>
+  	<servlet-class>com.furniture.web.controller.UpdateCartServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>UpdateCartServlet</servlet-name>
+  	<url-pattern>/servlet/UpdateCartServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- DeleteCartServlet -->
+  <servlet>
+  	<servlet-name>DeleteCartServlet</servlet-name>
+  	<servlet-class>com.furniture.web.controller.DeleteCartServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DeleteCartServlet</servlet-name>
+  	<url-pattern>/servlet/DeleteCartServlet</url-pattern>
+  </servlet-mapping>
   <!-- =============== com.furniture.web.controller end    =============== -->
   
   <welcome-file-list>
