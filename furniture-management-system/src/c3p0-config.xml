@@ -9,7 +9,7 @@
     <property name="driverClass">com.mysql.jdbc.Driver</property>
     <property name="jdbcUrl">jdbc:mysql://localhost:3306/furniture</property>
     <property name="user">root</property>
-    <property name="password">zsdegywzxh</property>
+    <property name="password">password</property>
     <property name="maxPoolSize">15</property>
     <property name="minPoolSize">5</property>
     <property name="acquireIncrement">5</property>
