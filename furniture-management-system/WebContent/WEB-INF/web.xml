@@ -118,6 +118,26 @@
     <url-pattern>/servlet/FurServlet</url-pattern>
   </servlet-mapping>
   
+     <!-- ConManServlet -->
+  <servlet>
+    <servlet-name>ConManServlet</servlet-name>
+    <servlet-class>com.furniture.web.controller.ConManServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ConManServlet</servlet-name>
+    <url-pattern>/servlet/ConManServlet</url-pattern>
+  </servlet-mapping>
+  
+     <!-- DeleteConServlet -->
+  <servlet>
+    <servlet-name>DeleteConServlet</servlet-name>
+    <servlet-class>com.furniture.web.controller.DeleteConServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteConServlet</servlet-name>
+    <url-pattern>/servlet/DeleteConServlet</url-pattern>
+  </servlet-mapping>
+  
   
   <!-- ListFurnitureServlet -->
   <servlet>
