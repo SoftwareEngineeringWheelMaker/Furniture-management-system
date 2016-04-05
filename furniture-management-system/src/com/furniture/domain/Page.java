@@ -7,7 +7,7 @@ public class Page {
 	private int totalpage;//记录总页数
 	
 	private int totalrecord;
-	private int pagesize=2;
+	private int pagesize=6;
 	
 	private int pagenum;//代表用户想看的页
 	private int startindex;//代表用户想看的页从数据库哪个地方开始取

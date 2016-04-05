@@ -24,7 +24,7 @@ public class ListFurnitureServlet extends HttpServlet{
 			BussinessServiceImpl service = new BussinessServiceImpl();
 			Page page = service.getPageData(pagenum,2,10);
 			req.setAttribute("page", page);
-			req.getRequestDispatcher("/WEB-INF/page/listfurniture.jsp").forward(req, resp);
+			req.getRequestDispatcher("/index.jsp").forward(req, resp);
 		} catch (Exception e) {
 			req.setAttribute("message", "查询失败");
 			req.getRequestDispatcher("/message.jsp").forward(req, resp);

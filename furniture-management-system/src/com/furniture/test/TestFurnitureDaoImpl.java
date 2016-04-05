@@ -25,4 +25,12 @@ public class TestFurnitureDaoImpl {
 	public void testGetTotalrecord(){
 		System.out.println(daoImpl.getTotalrecord());
 	}
+	
+	@Test
+	public void qAddFurniture(){
+		for (int i = 122; i < 200; i++) {
+			Furniture furniture = new Furniture("家具"+i, "a asd"+i, 12, 33, "asdf");
+			daoImpl.AddFurniture(furniture);
+		}
+	}
 }

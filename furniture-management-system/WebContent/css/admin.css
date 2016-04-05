@@ -1,0 +1,87 @@
+/*index.html*/
+.login_background{
+    padding-top: 170px;
+    background-color:#333;
+    color: #ffffff;
+}
+.login_background h2{
+    padding-bottom: 30px;
+    color: #999;
+    font-family: Microsoft YaHei;
+}
+/*register.html*/
+.register{
+    padding-top: 130px;
+    background-color: #303641;
+    color: #999;
+}
+.register h2{
+    padding-bottom: 10px;
+    color: #337AB7;
+}
+/*index.html*/
+.index-background{
+    background-color: #000;
+}
+.index-header{
+    margin-top: 58px;
+    border-bottom: #000;
+}
+.index-header nav{
+    margin: 15px 0 10px 0;
+    border: hidden;
+    background-color: #FFF;
+    color:#333;
+    font-family: Microsoft YaHei;
+}
+.logo{
+    margin-left:20px;
+    background-color: #000;
+    color: #FFF;
+    padding: 5px 3px;
+}
+.index-container{
+    background-color: #fff;
+    padding: 0;
+}
+.details{
+    height: 500px;
+    text-align: center;
+    font-family: Microsoft YaHei;
+    color: #fff;
+}
+.details-bg{
+    position:absolute; z-index:2;left:30px;top:170px
+}
+.items{
+    padding-top: 50px;
+}
+.content{
+    position:relative;
+}
+.money{
+    color: red;
+}
+.page{
+    margin-left:100px;
+}
+.foot{
+    background: #fff;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+.index-row{
+    margin-left:-42px;
+}
+.index-container{
+
+}
+.details-img{
+    width:1140px !important;
+    height:500px !important;
+}
+
+.cart{
+    background: #fff;
+    height:300px;
+}
