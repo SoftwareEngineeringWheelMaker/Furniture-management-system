@@ -72,7 +72,7 @@ public class FurServlet extends HttpServlet {
 					}
 				}
 			}
-			
+			req.getRequestDispatcher("/success.jsp").forward(req, resp);
 			break;
 			
 		case "manage":
@@ -119,6 +119,7 @@ public class FurServlet extends HttpServlet {
 			FurnitureDaoImpl furDaoImpl5 = new FurnitureDaoImpl();
 			fur3.setFid(Integer.parseInt(req.getParameter("id")));
 			furDaoImpl5.DeleteFurniture(fur3);
+			req.getRequestDispatcher("/success.jsp").forward(req, resp);
 			break;
 			
 		case "detail":
